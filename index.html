@@ -4,22 +4,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0a0a0a;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0b0b0b;
       color: white;
     }
 
+    /* NAVBAR */
     nav {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 40px;
       padding: 20px;
       background: #111;
       font-size: 14px;
     }
 
     nav a {
-      color: #aaa;
+      color: #888;
       text-decoration: none;
     }
 
@@ -27,97 +28,94 @@
       color: white;
     }
 
+    /* HERO */
     .hero {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 80px 10%;
-      flex-wrap: wrap;
+      padding: 100px 10%;
+      min-height: 80vh;
     }
 
-    .left {
+    .hero-left {
       max-width: 500px;
     }
 
-    .left h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+    .hero-left h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
     }
 
-    .left p {
-      color: #bbb;
+    .hero-left p {
+      color: #aaa;
       line-height: 1.6;
     }
 
     .btn {
+      margin-top: 25px;
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
       background: #22c55e;
-      color: black;
+      padding: 12px 30px;
       border-radius: 6px;
+      color: black;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .btn:hover {
-      background: #16a34a;
-    }
-
-    .right img {
-      width: 250px;
+    .hero-right img {
+      width: 280px;
+      height: 280px;
       border-radius: 50%;
+      object-fit: cover;
     }
 
-    .companies {
+    /* COMPANIES / TECH */
+    .tech {
       display: flex;
       justify-content: center;
-      gap: 40px;
-      padding: 30px;
-      opacity: 0.6;
-      font-size: 14px;
+      gap: 20px;
+      padding: 40px;
       border-top: 1px solid #222;
     }
 
-    .companies span {
+    .tech div {
+      padding: 10px 20px;
       border: 1px solid #333;
-      padding: 10px 15px;
-      border-radius: 5px;
+      border-radius: 6px;
+      color: #aaa;
     }
 
-    @media (max-width: 768px) {
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
       .hero {
         flex-direction: column;
         text-align: center;
       }
 
-      .right {
-        margin-top: 30px;
+      .hero-right {
+        margin-top: 40px;
       }
     }
   </style></head><body><nav>
   <a href="#">Home</a>
   <a href="#">Projects</a>
-  <a href="#">Skills</a>
   <a href="#">Contact</a>
-</nav><section class="hero">
-  <div class="left">
+</nav><section class="hero">  <div class="hero-left">
     <h1>Harsh Bhardwaj</h1>
     <p>
-      Full Stack Developer (MERN) focused on building scalable backend systems
-      and solving complex problems using Data Structures and Algorithms.
+      Full Stack Developer (MERN) focused on building scalable systems and solving
+      problems using Data Structures and Algorithms.
     </p><a href="mailto:benzenediazonium28@gmail.com" class="btn">
-  Contact Me
+  Let’s get started →
 </a>
 
-  </div>  <div class="right">
-    <img src="https://via.placeholder.com/250" alt="profile">
-  </div>
-</section><section class="companies">
-  <span>Node.js</span>
-  <span>Express</span>
-  <span>MongoDB</span>
-  <span>React</span>
-  <span>C++</span>
+  </div>  <div class="hero-right">
+    <img src="https://i.pravatar.cc/300" alt="profile">
+  </div></section><section class="tech">
+  <div>Node.js</div>
+  <div>Express</div>
+  <div>MongoDB</div>
+  <div>React</div>
+  <div>C++</div>
 </section></body>
 </html>
